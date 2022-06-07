@@ -121,18 +121,7 @@ public class JavaCoreApplication {
                     System.out.println("\n\n");
                     break;
             }
-
-
         }
-//        class loader example
-//        ClassLoaderDemo classLoaderDemo = new ClassLoaderDemo();
-//        classLoaderDemo.getDemo();
-
-//        JITCompilerGraalVM jitCompilerGraalVM = new JITCompilerGraalVM();
-//        String text = "po3mrdvfEfvefvVRETrthbBTYrtbrwtbgWErbfvgtwertBRTWRtbrwytntyhWecweFCTYntYN";
-//        jitCompilerGraalVM.countUppercase(text);
-
-//        SpringApplication.run(DemoJavaApplication.class, args);
     }
 
 }
