@@ -26,3 +26,7 @@ b) OOP:
 
 6- Encapsulation
 
+C) Lists
+
+
+
