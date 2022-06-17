@@ -3,6 +3,8 @@
 
 This is a simple demo repo for Java Core development. It demonstrate code for the following:
 
+(  javadoc is [here](https://doc/index.html) )
+
 a) JDK, JRE, JVM
 
 1- Class Loader

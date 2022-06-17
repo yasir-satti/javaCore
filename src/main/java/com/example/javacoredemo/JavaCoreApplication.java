@@ -2,6 +2,7 @@ package com.example.javacoredemo;
 
 import com.example.javacoredemo.jdkjrejvm.ClassLoaderDemo;
 import com.example.javacoredemo.jdkjrejvm.JITCompilerGraalVM;
+import com.example.javacoredemo.lists.*;
 import com.example.javacoredemo.oop.abstrct.MountainBike;
 import com.example.javacoredemo.oop.abstrct.SportsBike;
 import com.example.javacoredemo.oop.encapslation.Person;
@@ -33,8 +34,14 @@ public class JavaCoreApplication {
             System.out.println("4. OOP: Polymorphism using method overriding \n");
             System.out.println("5. OOP: Polymorphism using Method Overloading \n");
             System.out.println("6. OOP: Encapsulation \n");
-            System.out.println("11. Class Loader \n");
-            System.out.println("12. JIT Compiler \n");
+            System.out.println("7. Lists: Iterable using elements\n");
+            System.out.println("8. Lists: ArrayList \n");
+            System.out.println("9. Lists: Vector \n");
+            System.out.println("10. Lists: Stack \n");
+            System.out.println("11. Lists: Priority Queue \n");
+            System.out.println("12. Lists: ArrayDeque \n");
+            System.out.println("30. Class Loader \n");
+            System.out.println("31. JIT Compiler \n");
             System.out.println("0. Exit \n");
             System.out.println("\nEnter your menu choice number... ");
 
@@ -47,13 +54,13 @@ public class JavaCoreApplication {
                     mountainBike.brake();
                     SportsBike sportsBike = new SportsBike();
                     sportsBike.brake();
-                    System.out.println("\n\n");
+                    System.out.println("\n");
                     break;
                 case 2:
                     System.out.println(" *******  Super keyword...");
                     Dog dog = new Dog();
                     dog.printType();
-                    System.out.println("\n\n");
+                    System.out.println("\n");
                     break;
                 case 3:
                     System.out.println(" *******  Interface ...");
@@ -63,7 +70,7 @@ public class JavaCoreApplication {
                     Square square = new Square();
                     square.getArea();
                     square.getSides();
-                    System.out.println("\n\n");
+                    System.out.println("\n");
                     break;
                 case 4:
                     System.out.println(" *******  Polymorphism using method overriding ...");
@@ -74,7 +81,7 @@ public class JavaCoreApplication {
                     // create an object of Language class
                     Langauge langauge = new Langauge();
                     langauge.displayInfo();
-                    System.out.println("\n\n");
+                    System.out.println("\n");
                     break;
                 case 5:
                     System.out.println(" *******  Polymorphism using Method Overloading ...");
@@ -86,7 +93,7 @@ public class JavaCoreApplication {
 
                     // call method with a single argument
                     pattern.display('#');
-                    System.out.println("\n\n");
+                    System.out.println("\n");
                     break;
                 case 6:
                     System.out.println(" *******  Encapsulation ...");
@@ -98,19 +105,56 @@ public class JavaCoreApplication {
 
                     // access age using getter
                     System.out.println("My age is " + person.getAge());
-                    System.out.println("\n\n");
-                    break;                     case 11:
+                    System.out.println("\n");
+                    break;
+                case 7:
+                    System.out.println(" *******  Lists Iterator ...");
+                    ListIterable listIterable = new ListIterable();
+                    listIterable.demoListIterable();
+                    System.out.println("\n");
+                    break;
+                case 8:
+                    System.out.println(" *******  ArrayList ...");
+                    ListArrayList listArrayList = new ListArrayList();
+                    listArrayList.demoArrayList();
+                    System.out.println("\n");
+                    break;
+                case 9:
+                    System.out.println(" *******  Vector ...");
+                    ListVector listVector = new ListVector();
+                    listVector.demoVector();
+                    System.out.println("\n");
+                    break;
+                case 10:
+                    System.out.println(" *******  Stack ...");
+                    ListStack listStack = new ListStack();
+                    listStack.demoStack();
+                    System.out.println("\n");
+                    break;
+                case 11:
+                    System.out.println(" *******  Priority Queue ...");
+                    ListPriorityQueue listPriorityQueue = new ListPriorityQueue();
+                    listPriorityQueue.demoPriorityQueue();
+                    System.out.println("\n");
+                    break;
+                case 12:
+                    System.out.println(" *******  ArrayDeque ...");
+                    ListArrayDeque listArrayDeque = new ListArrayDeque();
+                    listArrayDeque.demoArrayDeque();
+                    System.out.println("\n");
+                    break;
+                case 30:
                     System.out.println(" *******  Class Loader...");
                     ClassLoaderDemo classLoaderDemo = new ClassLoaderDemo();
                     classLoaderDemo.getDemo();
-                    System.out.println("\n\n");
+                    System.out.println("\n");
                     break;
-                case 12:
+                    case 31:
                     System.out.println(" *******  Java core: JIT compiler ...");
                     JITCompilerGraalVM jitCompilerGraalVM = new JITCompilerGraalVM();
                     String text = "po3mrdvfEfvefvVRETrthbBTYrtbrwtbgWErbfvgtwertBRTWRtbrwytntyhWecweFCTYntYN";
                     jitCompilerGraalVM.countUppercase(text);
-                    System.out.println("\n\n");
+                    System.out.println("\n");
                     break;
                 case 0:
                     System.out.println("Exiting program...");
@@ -118,7 +162,7 @@ public class JavaCoreApplication {
                     break;
                 default:
                     System.out.println("This is not a valid manu option! try again");
-                    System.out.println("\n\n");
+                    System.out.println("\n");
                     break;
             }
         }
