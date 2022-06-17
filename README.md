@@ -3,7 +3,7 @@
 
 This is a simple demo repo for Java Core development. It demonstrate code for the following:
 
-(  javadoc is [here](https://doc/index.html) )
+(  javadoc is [here (doc/index.html)](https://doc/index.html) )
 
 a) JDK, JRE, JVM
 
@@ -26,3 +26,6 @@ b) OOP:
 
 6- Encapsulation
 
+c) Lists
+
+List, Iterable, ArrayList, LinkedList, Stack, Vector, Queue, Priority Queue, ArrayDeque, Deque, HashSet, LinkedHashSet, Sorted Set Interface, Tree Set

@@ -40,6 +40,9 @@ public class JavaCoreApplication {
             System.out.println("10. Lists: Stack \n");
             System.out.println("11. Lists: Priority Queue \n");
             System.out.println("12. Lists: ArrayDeque \n");
+            System.out.println("13. Lists: HashSet \n");
+            System.out.println("14. Lists: LinkedHashSet \n");
+            System.out.println("15. Lists: TreeSet \n");
             System.out.println("30. Class Loader \n");
             System.out.println("31. JIT Compiler \n");
             System.out.println("0. Exit \n");
@@ -141,6 +144,24 @@ public class JavaCoreApplication {
                     System.out.println(" *******  ArrayDeque ...");
                     ListArrayDeque listArrayDeque = new ListArrayDeque();
                     listArrayDeque.demoArrayDeque();
+                    System.out.println("\n");
+                    break;
+                case 13:
+                    System.out.println(" *******  HashSet ...");
+                    ListHashSet listHashSet = new ListHashSet();
+                    listHashSet.demoHashSet();
+                    System.out.println("\n");
+                    break;
+                case 14:
+                    System.out.println(" *******  LinkedHashSet ...");
+                    ListLinkedHashSet listLinkedHashSet = new ListLinkedHashSet();
+                    listLinkedHashSet.demoLinkedHashSet();
+                    System.out.println("\n");
+                    break;
+                case 15:
+                    System.out.println(" *******  TreeSet ...");
+                    ListTreeSet listTreeSet = new ListTreeSet();
+                    listTreeSet.demoTreeSet();
                     System.out.println("\n");
                     break;
                 case 30:
