@@ -3,7 +3,7 @@
 
 This is a simple demo repo for Java Core development. It demonstrate code for the following:
 
-(  javadoc is [here](doc/index.html) )
+(  javadoc is [here](https://doc/index.html) )
 
 a) JDK, JRE, JVM
 
