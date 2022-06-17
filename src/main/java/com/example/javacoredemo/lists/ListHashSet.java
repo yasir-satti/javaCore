@@ -8,6 +8,9 @@ public class ListHashSet {
     /**
      * HashSet class is a member of Java collections framework. It implements the Set interface. HashSets
      * are used to store a collection of unique elements
+     *
+     * Hashset Methods In Java (7)
+     * https://abhiandroid.com/java/hashset-methods.html
      */
 
     public void demoHashSet(){
