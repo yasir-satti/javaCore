@@ -12,7 +12,7 @@ How to use:
 3-Documentation is generated for the classes with Javadoc
 
 
-Find Javadoc documentation <a href="doc/index.html" target="_blank"> here</a>
+Find Javadoc documentation <a href="https://github.com/yasir-satti/javaCore/javadoc/index.html" target="_blank"> here</a>
 
 
 It demonstrate code for the following:
