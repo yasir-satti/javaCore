@@ -12,13 +12,10 @@ How to use:
 3-Documentation is generated for the classes with Javadoc
 
 
+Find Javadoc documentation <a href="doc/index.html" target="_blank"> here</a>
 
 
 It demonstrate code for the following:
-
-(  javadoc is [here (doc/index.html)](doc/index.html) )
-
-<a href="doc/index.html" target="_blank"> Javadoc documentation</a>
 
 a) JDK, JRE, JVM
 
