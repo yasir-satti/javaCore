@@ -1,7 +1,20 @@
 # **Java Core development demo**
 
 
-This is a simple demo repo for Java Core development. It demonstrate code for the following:
+This is a simple demo repo for Java Core development.
+
+How to use:
+
+1-Run the application and on the menu list type item number and press ENTER.
+
+2-Review the output and navigate to the relevant class where you will find the code
+
+3-Documentation is generated for the classes with Javadoc
+
+
+
+
+It demonstrate code for the following:
 
 (  javadoc is [here (doc/index.html)](https://doc/index.html) )
 
