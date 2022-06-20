@@ -16,7 +16,9 @@ How to use:
 
 It demonstrate code for the following:
 
-(  javadoc is [here (doc/index.html)](https://doc/index.html) )
+(  javadoc is [here (doc/index.html)](doc/index.html) )
+
+<a href="doc/index.html" target="_blank"> Javadoc documentation</a>
 
 a) JDK, JRE, JVM
 
