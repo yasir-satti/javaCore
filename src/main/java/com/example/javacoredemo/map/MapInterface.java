@@ -6,31 +6,40 @@ import java.util.Map;
 
 import static java.lang.Integer.valueOf;
 
+
+/**
+ *
+ * @author Yasir Satti
+ *
+ * <br> The Map interface of the Java collections framework provides the functionality of the map data structure.
+ * In Java, elements of Map are stored in key/value pairs. Keys are unique values associated with individual Values.
+ * <br>
+ * <br> A map cannot contain duplicate keys. And, each key is associated with a single value.
+ *
+ *
+ * <br>In order to use functionalities of the Map interface, we can use these classes:
+ *
+ * <br>
+ * <ul>
+ *     <li>HashMap</li>
+ * <li>EnumMap</li>
+ * <li>LinkedHashMap</li>
+ * <li>WeakHashMap</li>
+ * <li>TreeMap</li>
+ * </ul>
+ *
+ * @see <a href="https://www.programiz.com/java-programming/map" target="_blank"> Java Map Interface</a>
+ * <br>
+ * @see <a href="https://www.youtube.com/watch?v=uu20xO9AaU4" target="_blank"> Map Interface in Java Collection Framework (video)</a>
+ */
+
 public class MapInterface {
 
+
     /**
+     * Demonstrates methods of Map Interface class.
      *
-     * The Map interface of the Java collections framework provides the functionality of the map data structure.
-     * In Java, elements of Map are stored in key/value pairs. Keys are unique values associated with individual Values.
-     *
-     * A map cannot contain duplicate keys. And, each key is associated with a single value.
-     *
-     * Classes that implement Map
-     * Since Map is an interface, we cannot create objects from it.
-     *
-     * In order to use functionalities of the Map interface, we can use these classes:
-     *
-     * HashMap
-     * EnumMap
-     * LinkedHashMap
-     * WeakHashMap
-     * TreeMap
-     *
-     * Map Interface in Java With Example
-     * methods (14)
-     *
-     * https://abhiandroid.com/java/map
-     *
+     * @since 1.0
      */
 
     public void demoMapInterface() {

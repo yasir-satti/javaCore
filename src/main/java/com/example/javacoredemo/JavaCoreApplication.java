@@ -3,8 +3,7 @@ package com.example.javacoredemo;
 import com.example.javacoredemo.jdkjrejvm.ClassLoaderDemo;
 import com.example.javacoredemo.jdkjrejvm.JITCompilerGraalVM;
 import com.example.javacoredemo.lists.*;
-import com.example.javacoredemo.map.MapHashMap;
-import com.example.javacoredemo.map.MapInterface;
+import com.example.javacoredemo.map.*;
 import com.example.javacoredemo.oop.abstrct.MountainBike;
 import com.example.javacoredemo.oop.abstrct.SportsBike;
 import com.example.javacoredemo.oop.encapslation.Person;
@@ -47,6 +46,12 @@ public class JavaCoreApplication {
             System.out.println("15. Lists: TreeSet \n");
             System.out.println("16. Map: Interface \n");
             System.out.println("17. Map: HashMap \n");
+            System.out.println("18. Map: LinkedHashMap \n");
+            System.out.println("19. Map: WeakHashMap \n");
+            System.out.println("20. Map: EnumMap \n");
+            System.out.println("21. Map: SortedMap Interface \n");
+            System.out.println("22. Map: NavigableMap Interface \n");
+            System.out.println("23. Map: TreeMap  \n");
             System.out.println("30. Class Loader \n");
             System.out.println("31. JIT Compiler \n");
             System.out.println("0. Exit \n");
@@ -178,6 +183,42 @@ public class JavaCoreApplication {
                     System.out.println(" *******  HashMap ...");
                     MapHashMap mapHashMap = new MapHashMap();
                     mapHashMap.demoHashMap();
+                    System.out.println("\n");
+                    break;
+                case 18:
+                    System.out.println(" *******  LinkedHashMap ...");
+                    MapLinkedHashMap linkedHashMap = new MapLinkedHashMap();
+                    linkedHashMap.demo();
+                    System.out.println("\n");
+                    break;
+                case 19:
+                    System.out.println(" *******  WeakHashMap ...");
+                    MapWeakHashMap weakHashMap = new MapWeakHashMap();
+                    weakHashMap.demo();
+                    System.out.println("\n");
+                    break;
+                case 20:
+                    System.out.println(" *******  Enum Map ...");
+                    MapEnumMap enumMap = new MapEnumMap();
+                    enumMap.demo();
+                    System.out.println("\n");
+                    break;
+                case 21:
+                    System.out.println(" *******  Sorted Map ...");
+                    MapSortedMapInterface sortedMap = new MapSortedMapInterface();
+                    sortedMap.demo();
+                    System.out.println("\n");
+                    break;
+                case 22:
+                    System.out.println(" *******  NavigableMap Interface ...");
+                    MapNavigableMapInterface navigableMapInterface = new MapNavigableMapInterface();
+                    navigableMapInterface.demo();
+                    System.out.println("\n");
+                    break;
+                case 23:
+                    System.out.println(" *******  TreeMap ...");
+                    MapTreeMap treeMap = new MapTreeMap();
+                    treeMap.demo();
                     System.out.println("\n");
                     break;
                 case 30:
