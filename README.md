@@ -29,3 +29,7 @@ b) OOP:
 c) Lists
 
 List, Iterable, ArrayList, LinkedList, Stack, Vector, Queue, Priority Queue, ArrayDeque, Deque, HashSet, LinkedHashSet, Sorted Set Interface, Tree Set
+
+d) Map
+
+Map interface, HashMap, Enum Map, Linked HashMap, Navigable Map Interface, Sorted Map Interface, Tree Map, WeakHash Map
