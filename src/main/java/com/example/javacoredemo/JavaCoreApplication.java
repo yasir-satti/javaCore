@@ -1,5 +1,7 @@
 package com.example.javacoredemo;
 
+import com.example.javacoredemo.iostreams.IOinputStream;
+import com.example.javacoredemo.iostreams.IOoutputStream;
 import com.example.javacoredemo.jdkjrejvm.ClassLoaderDemo;
 import com.example.javacoredemo.jdkjrejvm.JITCompilerGraalVM;
 import com.example.javacoredemo.lists.*;
@@ -52,8 +54,10 @@ public class JavaCoreApplication {
             System.out.println("21. Map: SortedMap Interface \n");
             System.out.println("22. Map: NavigableMap Interface \n");
             System.out.println("23. Map: TreeMap  \n");
-            System.out.println("30. Class Loader \n");
-            System.out.println("31. JIT Compiler \n");
+            System.out.println("30. IO Streams: InputStream  \n");
+            System.out.println("31. IO Streams: OutputStream  \n");
+            System.out.println("40. Class Loader \n");
+            System.out.println("41. JIT Compiler \n");
             System.out.println("0. Exit \n");
             System.out.println("\nEnter your menu choice number... ");
 
@@ -222,12 +226,24 @@ public class JavaCoreApplication {
                     System.out.println("\n");
                     break;
                 case 30:
+                    System.out.println(" *******  InputStream ...");
+                    IOinputStream iOinputStream = new IOinputStream();
+                    iOinputStream.demo();
+                    System.out.println("\n");
+                    break;
+                case 31:
+                    System.out.println(" *******  OutputStream ...");
+                    IOoutputStream iOoutputStream = new IOoutputStream();
+                    iOoutputStream.demo();
+                    System.out.println("\n");
+                    break;
+                case 40:
                     System.out.println(" *******  Class Loader...");
                     ClassLoaderDemo classLoaderDemo = new ClassLoaderDemo();
                     classLoaderDemo.getDemo();
                     System.out.println("\n");
                     break;
-                    case 31:
+                case 41:
                     System.out.println(" *******  Java core: JIT compiler ...");
                     JITCompilerGraalVM jitCompilerGraalVM = new JITCompilerGraalVM();
                     String text = "po3mrdvfEfvefvVRETrthbBTYrtbrwtbgWErbfvgtwertBRTWRtbrwytntyhWecweFCTYntYN";
