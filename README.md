@@ -45,3 +45,7 @@ List, Iterable, ArrayList, LinkedList, Stack, Vector, Queue, Priority Queue, Arr
 d) Map
 
 Map interface, HashMap, Enum Map, Linked HashMap, Navigable Map Interface, Sorted Map Interface, Tree Map, WeakHash Map
+
+e) I/O Streams
+
+InputStream, OutputStream
