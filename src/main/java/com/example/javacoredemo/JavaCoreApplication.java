@@ -1,7 +1,6 @@
 package com.example.javacoredemo;
 
-import com.example.javacoredemo.iostreams.IOinputStream;
-import com.example.javacoredemo.iostreams.IOoutputStream;
+import com.example.javacoredemo.iostreams.*;
 import com.example.javacoredemo.jdkjrejvm.ClassLoaderDemo;
 import com.example.javacoredemo.jdkjrejvm.JITCompilerGraalVM;
 import com.example.javacoredemo.lists.*;
@@ -24,10 +23,15 @@ public class JavaCoreApplication {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        boolean mainLoop = true;
+        Scanner mainInput = new Scanner(System.in);
+        Scanner subInput = new Scanner(System.in);
 
-        int choice;
+        boolean mainLoop = true;
+        boolean subLoop = true;
+
+
+        int mainChoice;
+        int subChoice;
 
         while(true){
             System.out.println("++++++++ Java Core menu +++++++++++++++++");
@@ -54,16 +58,15 @@ public class JavaCoreApplication {
             System.out.println("21. Map: SortedMap Interface \n");
             System.out.println("22. Map: NavigableMap Interface \n");
             System.out.println("23. Map: TreeMap  \n");
-            System.out.println("30. IO Streams: InputStream  \n");
-            System.out.println("31. IO Streams: OutputStream  \n");
-            System.out.println("40. Class Loader \n");
-            System.out.println("41. JIT Compiler \n");
+            System.out.println("30. IO Streams \n");
+            System.out.println("50. Class Loader \n");
+            System.out.println("51. JIT Compiler \n");
             System.out.println("0. Exit \n");
             System.out.println("\nEnter your menu choice number... ");
 
-            choice = input.nextInt();
+            mainChoice = mainInput.nextInt();
 
-            switch(choice){
+            switch(mainChoice){
                 case 1:
                     System.out.println(" *******  OOP Abstraction example...");
                     MountainBike mountainBike = new MountainBike();
@@ -226,24 +229,67 @@ public class JavaCoreApplication {
                     System.out.println("\n");
                     break;
                 case 30:
-                    System.out.println(" *******  InputStream ...");
-                    IOinputStream iOinputStream = new IOinputStream();
-                    iOinputStream.demo();
-                    System.out.println("\n");
-                    break;
-                case 31:
-                    System.out.println(" *******  OutputStream ...");
-                    IOoutputStream iOoutputStream = new IOoutputStream();
-                    iOoutputStream.demo();
-                    System.out.println("\n");
-                    break;
-                case 40:
+                    while(true) {
+                        System.out.println("++++++++ IO Streams menu +++++++++++++++++");
+                        System.out.println("1. InputStream & OutputStream \n");
+                        System.out.println("2. FileInputStream & FileOutputStream \n");
+                        System.out.println("3. ByteArrayInputStream & ByteArrayOutputStream  \n");
+                        System.out.println("4. ObjectInputStream & ObjectOutputStream  \n");
+                        System.out.println("5. BufferedInputStream & BufferedOutputStream  \n");
+                        System.out.println("0. Return to main menu \n");
+                        System.out.println("\nEnter your menu choice number... ");
+
+                        subChoice = subInput.nextInt();
+
+                        switch (subChoice) {
+                            case 1:
+                                System.out.println(" *******  InputStream & OutputStream ...");
+                                IOStreams iOinputStream = new IOStreams();
+                                iOinputStream.demo();
+                                System.out.println("\n");
+                                break;
+                            case 2:
+                                System.out.println(" *******  FileInputStream & FileOutputStream...");
+                                IOFileStream ioFileStream = new IOFileStream();
+                                ioFileStream.demo();
+                                System.out.println("\n");
+                                break;
+                            case 3:
+                                System.out.println(" *******  ByteArrayInputStream & ByteArrayOutputStream...");
+                                IOByteArrayStream ioByteArrayStream = new IOByteArrayStream();
+                                ioByteArrayStream.demo();
+                                System.out.println("\n");
+                                break;
+                            case 4:
+                                System.out.println(" *******  ObjectInputStream & ObjectOutputStream...");
+                                IOObjectStream ioObjectStream = new IOObjectStream();
+                                ioObjectStream.demo();
+                                System.out.println("\n");
+                                break;
+                            case 5:
+                                System.out.println(" *******  BufferedInputStream & BufferedOutputStream...");
+                                IOBufferedStream ioBufferedStream = new IOBufferedStream();
+                                ioBufferedStream.demo();
+                                System.out.println("\n");
+                                break;
+                            case 0:
+                                System.out.println("Go back to main menu...");
+                                break;
+                            default:
+                                System.out.println("This is not a valid menu option! try again");
+                                System.out.println("\n");
+                                break;
+                        }
+                    }
+
+
+                case 50:
                     System.out.println(" *******  Class Loader...");
                     ClassLoaderDemo classLoaderDemo = new ClassLoaderDemo();
                     classLoaderDemo.getDemo();
                     System.out.println("\n");
                     break;
-                case 41:
+                case 51:
                     System.out.println(" *******  Java core: JIT compiler ...");
                     JITCompilerGraalVM jitCompilerGraalVM = new JITCompilerGraalVM();
                     String text = "po3mrdvfEfvefvVRETrthbBTYrtbrwtbgWErbfvgtwertBRTWRtbrwytntyhWecweFCTYntYN";
@@ -255,7 +301,7 @@ public class JavaCoreApplication {
                     System.exit(0);
                     break;
                 default:
-                    System.out.println("This is not a valid manu option! try again");
+                    System.out.println("This is not a valid menu option! try again");
                     System.out.println("\n");
                     break;
             }
