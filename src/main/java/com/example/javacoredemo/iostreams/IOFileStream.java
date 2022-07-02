@@ -68,7 +68,7 @@ public class IOFileStream {
 
 
     /**
-     * Demonstrates methods of FileInputStream class.
+     * Demonstrates methods of FileInputStream and FileOutputStream classs.
      *
      * @since 1.0
      */

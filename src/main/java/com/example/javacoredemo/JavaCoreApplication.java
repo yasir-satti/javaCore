@@ -1,5 +1,8 @@
 package com.example.javacoredemo;
 
+import com.example.javacoredemo.excption.ThrowThrows;
+import com.example.javacoredemo.excption.TryCatchFinally;
+import com.example.javacoredemo.excption.TryWithResources;
 import com.example.javacoredemo.iostreams.*;
 import com.example.javacoredemo.jdkjrejvm.ClassLoaderDemo;
 import com.example.javacoredemo.jdkjrejvm.JITCompilerGraalVM;
@@ -59,6 +62,7 @@ public class JavaCoreApplication {
             System.out.println("22. Map: NavigableMap Interface \n");
             System.out.println("23. Map: TreeMap  \n");
             System.out.println("30. IO Streams \n");
+            System.out.println("31. Java exceptions handling \n");
             System.out.println("50. Class Loader \n");
             System.out.println("51. JIT Compiler \n");
             System.out.println("0. Exit \n");
@@ -281,8 +285,57 @@ public class JavaCoreApplication {
                                 break;
                         }
                     }
+                case 31:
+                    while(true) {
+                        System.out.println("++++++++ Java exceptions handling menu +++++++++++++++++");
+                        System.out.println("1. Try-catch-finally block \n");
+                        System.out.println("2. Throw and Throws \n");
+                        System.out.println("3. Try-with-resources \n");
+                        System.out.println("0. Return to main menu \n");
+                        System.out.println("\nEnter your menu choice number... ");
 
+                        subChoice = subInput.nextInt();
 
+                        switch (subChoice) {
+                            case 1:
+                                System.out.println(" *******  Try-catch-finally block ...");
+                                TryCatchFinally tryCatchFinally = new TryCatchFinally();
+                                tryCatchFinally.demo();
+                                System.out.println("\n");
+                                break;
+                            case 2:
+                                System.out.println(" *******  Throw and Throws...");
+                                ThrowThrows throwThrows = new ThrowThrows();
+                                throwThrows.demo();
+                                System.out.println("\n");
+                                break;
+                            case 3:
+                                System.out.println(" *******  Try-with-resources...");
+                                TryWithResources tryWithResources = new TryWithResources();
+                                tryWithResources.demo();
+                                System.out.println("\n");
+                                break;
+                            case 4:
+                                System.out.println(" *******  ObjectInputStream & ObjectOutputStream...");
+                                IOObjectStream ioObjectStream = new IOObjectStream();
+                                ioObjectStream.demo();
+                                System.out.println("\n");
+                                break;
+                            case 5:
+                                System.out.println(" *******  BufferedInputStream & BufferedOutputStream...");
+                                IOBufferedStream ioBufferedStream = new IOBufferedStream();
+                                ioBufferedStream.demo();
+                                System.out.println("\n");
+                                break;
+                            case 0:
+                                System.out.println("Go back to main menu...");
+                                break;
+                            default:
+                                System.out.println("This is not a valid menu option! try again");
+                                System.out.println("\n");
+                                break;
+                        }
+                    }
                 case 50:
                     System.out.println(" *******  Class Loader...");
                     ClassLoaderDemo classLoaderDemo = new ClassLoaderDemo();

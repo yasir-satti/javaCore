@@ -48,4 +48,8 @@ Map interface, HashMap, Enum Map, Linked HashMap, Navigable Map Interface, Sorte
 
 e) I/O Streams
 
-InputStream, OutputStream
+InputStream, OutputStream, ByteInputStream, ByteOutputStream, ObjectInputStream, ObjectOutputStream, BufferedInputStream, BufferedOutputStream, FileInputStream, FileOutputStream
+
+f) Java Exceptions
+
+Try-catch-finally, Throw & Throws, Try-with-resources
