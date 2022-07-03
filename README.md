@@ -53,3 +53,7 @@ InputStream, OutputStream, ByteInputStream, ByteOutputStream, ObjectInputStream,
 f) Java Exceptions
 
 Try-catch-finally, Throw & Throws, Try-with-resources
+
+g) Java annotations
+
+Annottions, Annotation Types
