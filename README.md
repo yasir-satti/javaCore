@@ -56,4 +56,4 @@ Try-catch-finally, Throw & Throws, Try-with-resources
 
 g) Java annotations
 
-Annottions, Annotation Types
+Annotations, Annotation Types
