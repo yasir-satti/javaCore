@@ -16,7 +16,7 @@ public class SimpleLogger {
 
     static Logger logger = Logger.getLogger(SimpleLogger.class.getName());
 
-    public static void main(String[] args) {
+    public void demo(){
         try {
             FileInputStream logFile = new FileInputStream("mylogging.properties");
             LogManager.getLogManager().readConfiguration(logFile);

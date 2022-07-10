@@ -7,7 +7,10 @@ import com.example.javacoredemo.iostreams.*;
 import com.example.javacoredemo.jdkjrejvm.ClassLoaderDemo;
 import com.example.javacoredemo.jdkjrejvm.JITCompilerGraalVM;
 import com.example.javacoredemo.lists.*;
+import com.example.javacoredemo.logger.SLF4JExample.SLF4JExample;
+import com.example.javacoredemo.logger.simpleLogger.SimpleLogger;
 import com.example.javacoredemo.map.*;
+import com.example.javacoredemo.logger.myLoggerFormatter.UseLogger;
 import com.example.javacoredemo.oop.abstrct.MountainBike;
 import com.example.javacoredemo.oop.abstrct.SportsBike;
 import com.example.javacoredemo.oop.encapslation.Person;
@@ -63,6 +66,7 @@ public class JavaCoreApplication {
             System.out.println("23. Map: TreeMap  \n");
             System.out.println("30. IO Streams \n");
             System.out.println("31. Java exceptions handling \n");
+            System.out.println("32. Java logging \n");
             System.out.println("50. Class Loader \n");
             System.out.println("51. JIT Compiler \n");
             System.out.println("0. Exit \n");
@@ -313,6 +317,57 @@ public class JavaCoreApplication {
                                 System.out.println(" *******  Try-with-resources...");
                                 TryWithResources tryWithResources = new TryWithResources();
                                 tryWithResources.demo();
+                                System.out.println("\n");
+                                break;
+                            case 4:
+                                System.out.println(" *******  ObjectInputStream & ObjectOutputStream...");
+                                IOObjectStream ioObjectStream = new IOObjectStream();
+                                ioObjectStream.demo();
+                                System.out.println("\n");
+                                break;
+                            case 5:
+                                System.out.println(" *******  BufferedInputStream & BufferedOutputStream...");
+                                IOBufferedStream ioBufferedStream = new IOBufferedStream();
+                                ioBufferedStream.demo();
+                                System.out.println("\n");
+                                break;
+                            case 0:
+                                System.out.println("Go back to main menu...");
+                                break;
+                            default:
+                                System.out.println("This is not a valid menu option! try again");
+                                System.out.println("\n");
+                                break;
+                        }
+                    }
+                case 32:
+                    while(true) {
+                        System.out.println("++++++++ Java Logger menu +++++++++++++++++");
+                        System.out.println("1. Logger Fromatter \n");
+                        System.out.println("2. Simple Logger \n");
+                        System.out.println("3. SLF4j with Logback logging \n");
+                        System.out.println("0. Return to main menu \n");
+                        System.out.println("\nEnter your menu choice number... ");
+
+                        subChoice = subInput.nextInt();
+
+                        switch (subChoice) {
+                            case 1:
+                                System.out.println(" *******  Logger Fromatter ...");
+                                UseLogger useLogger = new UseLogger();
+                                useLogger.demo();
+                                System.out.println("\n");
+                                break;
+                            case 2:
+                                System.out.println(" *******  Simple Logger...");
+                                SimpleLogger simpleLogger = new SimpleLogger();
+                                simpleLogger.demo();
+                                System.out.println("\n");
+                                break;
+                            case 3:
+                                System.out.println(" *******  SLF4j with Logback logging...");
+                                SLF4JExample slf4JExample = new SLF4JExample();
+                                slf4JExample.demo();
                                 System.out.println("\n");
                                 break;
                             case 4:

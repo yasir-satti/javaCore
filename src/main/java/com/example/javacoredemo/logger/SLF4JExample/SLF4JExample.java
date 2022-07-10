@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class SLF4JExample {
-    public static void main(String[] args) {
+    public void demo(){
 
         demoConsolLogger();
         demoFileLogger();

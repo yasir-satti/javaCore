@@ -33,7 +33,7 @@ public class UseLogger {
         LOGGER.finest("Really not important");
     }
 
-    public static void main(String[] args) {
+    public void demo(){
         UseLogger tester = new UseLogger();
         try {
             MyLogger.setup();
