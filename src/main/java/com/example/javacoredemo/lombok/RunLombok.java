@@ -6,8 +6,9 @@ package com.example.javacoredemo.lombok;
  * <br>
  * <br>The project Lombok is a popular and widely used Java library that is used to minimize or remove the boilerplate
  * code. It saves time and effort. Just by using the annotations, we can save space and readability of the source code.
- * It is automatically plugging into IDEs and build tools to spice up our Java application.
+ * It is automatically plugging into IDEs and build tools to spice up your Java application with various annotations.
  * <br>
+ * <br><img src="lombok.jpeg" alt="Java Lombok project" width="600" height="400">
  *
  * <br>
  * @see <a href="https://www.javatpoint.com/lombok-java" target="_blank"> Lombok Java project</a>
