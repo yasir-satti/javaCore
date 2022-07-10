@@ -9,6 +9,7 @@ import com.example.javacoredemo.jdkjrejvm.JITCompilerGraalVM;
 import com.example.javacoredemo.lists.*;
 import com.example.javacoredemo.logger.SLF4JExample.SLF4JExample;
 import com.example.javacoredemo.logger.simpleLogger.SimpleLogger;
+import com.example.javacoredemo.lombok.RunLombok;
 import com.example.javacoredemo.map.*;
 import com.example.javacoredemo.logger.myLoggerFormatter.UseLogger;
 import com.example.javacoredemo.oop.abstrct.MountainBike;
@@ -67,6 +68,7 @@ public class JavaCoreApplication {
             System.out.println("30. IO Streams \n");
             System.out.println("31. Java exceptions handling \n");
             System.out.println("32. Java logging \n");
+            System.out.println("33. Java lombok project \n");
             System.out.println("50. Class Loader \n");
             System.out.println("51. JIT Compiler \n");
             System.out.println("0. Exit \n");
@@ -391,6 +393,12 @@ public class JavaCoreApplication {
                                 break;
                         }
                     }
+                case 33:
+                    System.out.println(" *******  Java lombok project...");
+                    RunLombok runLombok = new RunLombok();
+                    runLombok.demo();
+                    System.out.println("\n");
+                    break;
                 case 50:
                     System.out.println(" *******  Class Loader...");
                     ClassLoaderDemo classLoaderDemo = new ClassLoaderDemo();

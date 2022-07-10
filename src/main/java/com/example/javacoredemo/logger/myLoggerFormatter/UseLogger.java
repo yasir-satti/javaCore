@@ -33,6 +33,11 @@ public class UseLogger {
         LOGGER.finest("Really not important");
     }
 
+    /**
+     * Demonstrates use of logger formatter.
+     *
+     * @since 1.0
+     */
     public void demo(){
         UseLogger tester = new UseLogger();
         try {
