@@ -4,6 +4,10 @@ com.example.javacoredemo.excption
 com.example.javacoredemo.iostreams
 com.example.javacoredemo.jdkjrejvm
 com.example.javacoredemo.lists
+com.example.javacoredemo.logger.myLoggerFormatter
+com.example.javacoredemo.logger.simpleLogger
+com.example.javacoredemo.logger.SLF4JExample
+com.example.javacoredemo.lombok
 com.example.javacoredemo.map
 com.example.javacoredemo.oop.abstrct
 com.example.javacoredemo.oop.encapslation
