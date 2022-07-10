@@ -57,3 +57,10 @@ Try-catch-finally, Throw & Throws, Try-with-resources
 g) Java annotations
 
 Annotations, Annotation Types
+
+h) Java logger
+
+Java.util.looger
+Slf4j - Logback
+
+i) Java lombok project
