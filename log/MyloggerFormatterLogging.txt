@@ -1,0 +1,8 @@
+Jul 10, 2022 3:57:43 PM com.example.javacoredemo.logger.myLoggerFormatter.UseLogger doSomeThingAndLog
+SEVERE: Info Log
+Jul 10, 2022 3:57:43 PM com.example.javacoredemo.logger.myLoggerFormatter.UseLogger doSomeThingAndLog
+SEVERE: Info Log
+Jul 10, 2022 3:57:43 PM com.example.javacoredemo.logger.myLoggerFormatter.UseLogger doSomeThingAndLog
+WARNING: Info Log
+Jul 10, 2022 3:57:43 PM com.example.javacoredemo.logger.myLoggerFormatter.UseLogger doSomeThingAndLog
+INFO: Info Log

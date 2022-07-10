@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration>
+
+<configuration>
+    <import class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"/>
+    <import class="ch.qos.logback.core.ConsoleAppender"/>
+    <import class="ch.qos.logback.core.FileAppender"/>
+
+    <appender name="console" class="ConsoleAppender">
+        <encoder class="PatternLayoutEncoder">
+            <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+        <appender name="FILE" class="FileAppender">
+            <file>log/slf4jLogbackFileAppender.log</file>
+            <append>true</append>
+            <!-- set immediateFlush to false for much higher logging throughput -->
+            <immediateFlush>true</immediateFlush>
+            <!-- encoders are assigned the type
+                 ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+            <encoder>
+                <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+            </encoder>
+        </appender>
+
+    <logger name="consoleLogger" level="info">
+        <appender-ref ref="console" />
+    </logger>
+        <logger name="FileLogger">
+            <appender-ref ref="FILE" />
+        </logger>
+    <!--    <root level="DEBUG">-->
+    <!--        <appender-ref ref="STDOUT"/>-->
+    <!--    </root>-->
+</configuration>
