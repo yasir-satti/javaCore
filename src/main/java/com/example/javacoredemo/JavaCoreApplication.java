@@ -3,6 +3,7 @@ package com.example.javacoredemo;
 import com.example.javacoredemo.excption.ThrowThrows;
 import com.example.javacoredemo.excption.TryCatchFinally;
 import com.example.javacoredemo.excption.TryWithResources;
+import com.example.javacoredemo.generics.Generics;
 import com.example.javacoredemo.iostreams.*;
 import com.example.javacoredemo.jdkjrejvm.ClassLoaderDemo;
 import com.example.javacoredemo.jdkjrejvm.JITCompilerGraalVM;
@@ -68,7 +69,8 @@ public class JavaCoreApplication {
             System.out.println("30. IO Streams \n");
             System.out.println("31. Java exceptions handling \n");
             System.out.println("32. Java logging \n");
-            System.out.println("33. Java lombok project \n");
+            System.out.println("33. Lombok \n");
+            System.out.println("34. Generics \n");
             System.out.println("50. Class Loader \n");
             System.out.println("51. JIT Compiler \n");
             System.out.println("0. Exit \n");
@@ -397,6 +399,12 @@ public class JavaCoreApplication {
                     System.out.println(" *******  Java lombok project...");
                     RunLombok runLombok = new RunLombok();
                     runLombok.demo();
+                    System.out.println("\n");
+                    break;
+                case 34:
+                    System.out.println(" *******  Java Generics...");
+                    Generics generics = new Generics();
+                    generics.demoGenerics();
                     System.out.println("\n");
                     break;
                 case 50:

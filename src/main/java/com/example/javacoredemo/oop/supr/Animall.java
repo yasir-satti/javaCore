@@ -1,15 +1,15 @@
 package com.example.javacoredemo.oop.supr;
 
-public class Animal {
+public class Animall {
 //    class Animal {
 
         // default or no-arg constructor
-        Animal() {
+        Animall() {
             System.out.println("I am an animal");
         }
 
         // parameterized constructor
-        Animal(String type) {
+        Animall(String type) {
             System.out.println("Type: "+type);
         }
 
