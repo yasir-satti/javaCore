@@ -1,6 +1,6 @@
 package com.example.javacoredemo.oop.supr;
 
-public class Dog extends Animal {
+public class Dog extends Animall {
 
         // default constructor
         public Dog() {
