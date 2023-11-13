@@ -1,5 +1,6 @@
 package com.example.javacoredemo;
 
+import com.example.javacoredemo.collctions.Demo;
 import com.example.javacoredemo.excption.ThrowThrows;
 import com.example.javacoredemo.excption.TryCatchFinally;
 import com.example.javacoredemo.excption.TryWithResources;
@@ -71,6 +72,7 @@ public class JavaCoreApplication {
             System.out.println("32. Java logging \n");
             System.out.println("33. Lombok \n");
             System.out.println("34. Generics \n");
+            System.out.println("35. Collections \n");
             System.out.println("50. Class Loader \n");
             System.out.println("51. JIT Compiler \n");
             System.out.println("0. Exit \n");
@@ -405,6 +407,12 @@ public class JavaCoreApplication {
                     System.out.println(" *******  Java Generics...");
                     Generics generics = new Generics();
                     generics.demoGenerics();
+                    System.out.println("\n");
+                    break;
+                case 35:
+                    System.out.println(" *******  Java Collections...");
+                    Demo demoGenericList = new Demo();
+                    demoGenericList.demo();
                     System.out.println("\n");
                     break;
                 case 50:
