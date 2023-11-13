@@ -64,3 +64,7 @@ Java.util.looger
 Slf4j - Logback
 
 i) Java lombok project
+
+j) Java Generics
+
+k) Java Collections
