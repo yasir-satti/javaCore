@@ -1,5 +1,6 @@
 package com.example.javacoredemo.collctions;
 
+import java.io.BufferedReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -14,8 +15,8 @@ public class StreamDemo {
         nums.stream().forEach(System.out::println);
 
         // Data Stream can be used once because it is destroyed after first use
-        Stream<Integer> data = nums.stream();
-         data.forEach(System.out::println);
+//        Stream<Integer> data = nums.stream();
+//         data.forEach(System.out::println);
         // You can use forEach() method to iterate over the elements of the stream ONLY once
         // Exception  java.lang.IllegalStateException: stream has already been operated upon or closed
         // data.forEach(System.out::println);
@@ -57,6 +58,5 @@ public class StreamDemo {
                 .map(n -> n * 2)
                 .reduce(Integer::sum);
         System.out.println("Data stream reduce result is " + result.get());
-
     };
 }
