@@ -1,10 +1,6 @@
 package com.example.javacoredemo.generics;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.io.ByteArrayOutputStream;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AnimalTest {
