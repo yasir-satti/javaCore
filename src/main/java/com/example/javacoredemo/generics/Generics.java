@@ -1,10 +1,5 @@
 package com.example.javacoredemo.generics;
 
-import com.example.javacoredemo.generics.classes.Animal;
-import com.example.javacoredemo.generics.classes.AnimalPrinter;
-import com.example.javacoredemo.generics.classes.Cat;
-import com.example.javacoredemo.generics.classes.Dog;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.javacoredemo.generics.classes;
+package com.example.javacoredemo.generics;
 
 public class Animal {
     private String animalType;

@@ -1,4 +1,6 @@
-package com.example.javacoredemo.generics.classes;
+package com.example.javacoredemo.generics;
+
+import com.example.javacoredemo.generics.Animal;
 
 public class Dog extends Animal {
     double walkDistancePreference;

@@ -1,6 +1,8 @@
-package com.example.javacoredemo.generics.classes;
+package com.example.javacoredemo.generics;
 
-public class Cat extends Animal{
+import com.example.javacoredemo.generics.Animal;
+
+public class Cat extends Animal {
     private String litterPreference;
     public Cat(String name, int age) {
         super("cat", name, age);
