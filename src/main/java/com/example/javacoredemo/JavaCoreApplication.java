@@ -23,6 +23,7 @@ import com.example.javacoredemo.oop.plymrphism.Java;
 import com.example.javacoredemo.oop.plymrphism.Langauge;
 import com.example.javacoredemo.oop.plymrphism.Pattern;
 import com.example.javacoredemo.oop.supr.Dog;
+import com.example.javacoredemo.stringsChar.StringsChars;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Scanner;
@@ -73,6 +74,7 @@ public class JavaCoreApplication {
             System.out.println("33. Lombok \n");
             System.out.println("34. Generics \n");
             System.out.println("35. Collections \n");
+            System.out.println("36. Strings & Chars \n");
             System.out.println("50. Class Loader \n");
             System.out.println("51. JIT Compiler \n");
             System.out.println("0. Exit \n");
@@ -413,6 +415,12 @@ public class JavaCoreApplication {
                     System.out.println(" *******  Java Collections...");
                     Demo demoGenericList = new Demo();
                     demoGenericList.demo();
+                    System.out.println("\n");
+                    break;
+                case 36:
+                    System.out.println(" *******  Java Strings & Chars ...");
+                    StringsChars stringsChars = new StringsChars();
+                    stringsChars.demo();
                     System.out.println("\n");
                     break;
                 case 50:
