@@ -1,7 +1,5 @@
 package com.example.javacoredemo.collctions;
 
-import java.io.BufferedReader;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -28,14 +26,14 @@ public class StreamDemo {
         sortedStream.forEach(System.out::println);
 
         // Manipulate the stream data
-        System.out.println("Mnipulate the stream data by doubling");
+        System.out.println("Manipulate the stream data by doubling");
         nums.stream()
                 .sorted()
                 .map(n -> n * 2)
                 .forEach(System.out::println);
 
         // Manipulate the stream data with filter only odd number
-        System.out.println("Mnipulate the stream data with filter only odd number");
+        System.out.println("Manipulate the stream data with filter only odd number");
         nums.stream()
                 .filter(n -> n % 2 == 1)
                 .sorted()
@@ -43,7 +41,7 @@ public class StreamDemo {
                 .forEach(System.out::println);
 
         // Manipulate the stream data with filter only odd number
-        System.out.println("Mnipulate the stream data with filter only odd number");
+        System.out.println("Manipulate the stream data with filter only odd number");
         nums.stream()
                 .filter(n -> n % 2 == 1)
                 .sorted()

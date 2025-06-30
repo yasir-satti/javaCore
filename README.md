@@ -68,3 +68,5 @@ i) Java lombok project
 j) Java Generics
 
 k) Java Collections
+
+L) Java Strings & Chars
